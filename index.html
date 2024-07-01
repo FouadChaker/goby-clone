@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="pt-10 pb-14 container mx-auto flex flex-row justify-center space-x-16">
+      <div class="pt-10 pb-14 container mx-auto flex flex-row justify-center gap-x-8 md:gap-x-16">
         <div class="hidden lg:block">
           <p class="font-gotham font-bold text-xs text-center">
             BEST NEW ELECTRIC <br />
@@ -104,9 +104,9 @@
     </section>
     <!-- product -->
     <section>
-      <div class="h-[600px] bg-cover bg-center md:bg-toothpaste">
+      <div class="h-[820px] md:h-[600px] py-8 bg-cover bg-top bg-secondary bg-toothpaste-mobile md:bg-toothpaste">
         <div class="container mx-auto h-full flex flex-col md:flex-row justify-center">
-          <div class="flex-1 flex flex-col items-center justify-center">
+          <div class="flex-none md:flex-1 flex flex-col items-center justify-center">
             <p class="font-gotham-cond font-bold text-6xl text-center">TOOTH, MEET PASTE</p>
             <p class="pt-4 text-base font-serif text-center">The all-new Goby Toothpaste has arrived.</p>
             <button
@@ -115,7 +115,7 @@
               SHOP NOW
             </button>
           </div>
-          <div class="flex-1 bg-cover bg-center bg-toothpaste md:bg-none"></div>
+          <div class="flex-1"></div>
         </div>
       </div>
     </section>
@@ -124,8 +124,8 @@
       <div class="container mx-auto py-6 flex flex-col items-center justify-center">
         <img class="h-20 m-4" src="public/img/ada.png" />
         <p class="text-base font-serif text-center">
-          Goby Brush Kits meet the ADA specification for electric <br />
-          toothbrushes and are proven to be safe and effective at removing <br />
+          Goby Brush Kits meet the ADA specification for electric <br class="hidden md:block" />
+          toothbrushes and are proven to be safe and effective at removing <br class="hidden md:block" />
           plaque and helping to prevent and reduce gingivitis.
         </p>
         <button class="bg-white rounded font-gotham font-extrabold mt-4 py-4 px-10 text-sm">LEARN MORE</button>
@@ -236,7 +236,7 @@
         <div class="container mx-auto px-4 h-full flex flex-col items-center justify-center">
           <p class="font-gotham-cond font-bold text-4xl text-center">UNLIMITED COMPLIMENTS. GUARANTEED.</p>
           <div
-            class="pt-16 flex flex-col md:flex-row justify-center items-stretch space-y-12 md:space-y-0 md:space-x-12 bg-white"
+            class="pt-8 lg:pt-16 flex flex-col md:flex-row justify-center items-stretch space-y-12 md:space-y-0 md:space-x-12 bg-white"
           >
             <div class="flex flex-col justify-center items-center">
               <svg
@@ -359,8 +359,8 @@
     </section>
     <!-- reviews -->
     <section>
-      <div class="bg-[#f7f7f7] bg-testimonials-right bg-contain bg-no-repeat bg-right">
-        <div class="h-128 flex justify-center bg-testimonials-left bg-contain bg-no-repeat bg-left">
+      <div class="bg-[#f7f7f7] lg:bg-testimonials-right bg-contain bg-no-repeat bg-right">
+        <div class="h-128 flex justify-center lg:bg-testimonials-left bg-contain bg-no-repeat bg-left">
           <div class="flex flex-col items-center justify-center">
             <p class="font-gotham-cond font-bold text-4xl text-center">THE REVIEWS ARE IN</p>
             <div class="mt-16">
@@ -373,8 +373,8 @@
               >
             </div>
             <p class="mt-12 text-base font-serif text-center">
-              "I went from a Sonicare (of 10+ years) to the Goby and couldn't be <br />
-              happier. I feel like I just left the dentist chair after having my 6 <br />
+              "I went from a Sonicare (of 10+ years) to the Goby and couldn't be <br class="hidden md:block" />
+              happier. I feel like I just left the dentist chair after having my 6 <br class="hidden md:block" />
               month check up and cleaning."
             </p>
             <p class="pt-8 text-xs font-extrabold text-center uppercase">JAMES P., CLIFTON, NJ</p>
@@ -385,6 +385,7 @@
             </button>
           </div>
         </div>
+        <img src="public/img/testimonials-bg-mobile.png" class="md:hidden" />
       </div>
     </section>
     <!-- markets -->
@@ -392,19 +393,23 @@
       <div class="container mx-auto">
         <div class="flex flex-col items-center justify-center pb-16 pt-8">
           <div class="flex items-stretch max-w-[64rem]">
-            <div class="py-4 px-[88px] flex-1 flex flex-col justify-center border-b-2 border-b-black">
+            <div class="py-4 px-4 md:px-12 lg:px-[88px] flex-1 flex flex-col justify-center border-b-2 border-b-black">
               <img
                 class="my-auto"
                 src="https://static.wixstatic.com/media/035bdd_3afdabcbfc404e49921e990892297a0f~mv2.png/v1/fill/w_598,h_88,al_c,usm_0.66_1.00_0.01/The_New_York_Times_logo.png"
               />
             </div>
-            <div class="py-4 px-[88px] flex-1 flex flex-col justify-center border-b-2 border-b-white hover:border-b-gray-300">
+            <div
+              class="py-4 px-4 md:px-12 lg:px-[88px] flex-1 flex flex-col justify-center border-b-2 border-b-white hover:border-b-gray-300"
+            >
               <img
                 class="my-auto opacity-30"
                 src="https://th.bing.com/th/id/R.e011e32c713d2a1810e90c9140190033?rik=VPeSiBEMzhrCCg&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0818%2f5369%2ffiles%2fcoolhunting_large.png%3f7206891560225075616&ehk=vh7MtC984v31TliCs6Rp4yCIWt%2fY9XLFP4sADW5Oor4%3d&risl=&pid=ImgRaw&r=0"
               />
             </div>
-            <div class="py-4 px-[88px] flex-1 flex flex-col justify-center border-b-2 border-b-white hover:border-b-gray-300">
+            <div
+              class="py-4 px-4 md:px-12 lg:px-[88px] flex-1 flex flex-col justify-center border-b-2 border-b-white hover:border-b-gray-300"
+            >
               <img
                 class="my-auto opacity-30"
                 src="https://www.wpromote.com/wp-content/uploads/2020/05/Business-Insider-logo_row.png"
@@ -519,12 +524,12 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between gap-2 md:gap-6">
           <p class="font-gotham font-bold text-xs text-gray-500">
             Website clone of the goby.co home page. All rights reserved to their owners. 2024
           </p>
 
-          <ul class="flex gap-6">
+          <ul class="flex gap-2 md:gap-6">
             <li>
               <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                 <span class="sr-only">Facebook</span>
